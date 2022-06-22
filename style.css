@@ -1,20 +1,57 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url("img/background.png");
+}
+
+header {
+  background-color: #000;
+  padding: 10px 10px 10px 10px;
 }
 
 .nav-bar {
-    background-color: #000;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-.nav-bar div {
-    display: inline;
-    width: 50%;
-}
-
 
 .nav-links a {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+}
+
+.nav-links a:nth-child(n+2) {
+  margin-left: 50px;
+}
+
+.nav-buttons img:nth-child(n-2) {
+  margin-right: 50px;
+}
+
+.logo {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.benefits img {
+  width: 20px;
+}
+
+.fast, .cool, .expensive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+  text-align: center;
 }
