@@ -1,16 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
   margin: 0;
   padding: 0;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
     background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
   background-color: #000;
   padding: 10px 10px 10px 10px;
+}
+
+section {
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 .nav-bar {
@@ -42,16 +61,68 @@ header {
   display: flex;
   justify-content: space-around;
   color: #fff;
+  margin-bottom: 50px;
 }
 
 .benefits img {
   width: 20px;
+  margin-bottom: 20px;
+}
+
+.benefits h3 {
+  margin-bottom: 20px;
 }
 
 .fast, .cool, .expensive {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 10%;
+  width: 20%;
   text-align: center;
+}
+
+.prices_and_gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+  background-color: #FBF7F4;
+  padding: 40px;
+  width: 100%;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery h3 {
+  font-size: 23px;
+}
+
+.gallery img {
+  margin-top: 20px;
+}
+
+.dots {
+  width: 100%;
+  border-bottom: 1px dotted;
+}
+
+.prices span, .prices h3 {
+  font-size: 23px;
+  white-space: nowrap;
+}
+
+.prices .line:nth-child(n + 1) {
+  margin-top: 40px;
+}
+
+.line {
+  display: flex;
 }
