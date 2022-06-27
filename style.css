@@ -126,3 +126,12 @@ section {
 .line {
   display: flex;
 }
+
+.prices_button {
+  text-transform: uppercase;
+  color: #fff;
+  background: #000;
+  width: 192px;
+  height: 44px;
+  margin-top: 20px;
+}
