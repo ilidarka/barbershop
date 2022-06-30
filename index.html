@@ -117,23 +117,52 @@
               </span>
               <div class="registration_form">
                 <form action="">
-                  <label for="date">ДАТА</label>
-                  <input class="registration_input" id="date" type="text" value="01.01.2022">
-                  <label for="time">ВРЕМЯ</label>
-                  <input class="registration_input" id="time" type="text" value="00:00">
-                  <label for="phone">ТЕЛЕФОН</label>
-                  <input class="registration_input" id="phone" type="text" value="+7 800 937-99-92">
-                  <label for="name">ИМЯ</label>
-                  <input class="registration_input" id="name" type="name">
-                  <input class="buttons" type="submit" name="register" value="Записаться">
+                  <div class="customer_info">
+                    <div class="order_info">
+                      <div class="date_form">
+                        <label for="date">ДАТА</label>
+                        <input class="registration_input date_input" id="date" type="text" value="01.01.2022">
+                      </div>
+                      <div class="time_form">
+                        <label for="time">ВРЕМЯ</label>
+                        <input class="registration_input time_input" id="time" type="text" value="00:00">
+                      </div>
+                      <div class="phone_form">
+                        <label for="phone">ТЕЛЕФОН</label>
+                        <input class="registration_input phone_input" id="phone" type="text" value="+7 800 937-99-92">
+                      </div>
+                    </div>
+                    <div class="customer_name">
+                      <label for="name">ИМЯ</label>
+                      <input class="registration_input name_input" id="name" type="name">
+                    </div>
+                    <input class="buttons" type="submit" name="register" value="Записаться">
+                  </div>
                 </form>
               </div>
             </div>
           </section>
         </main>
+        <footer class="footer_bar">
+          <div class="footer_info">
+            <img src="img/footerlogo.svg" alt="footer logo" width="300">
+            <span>Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</span>
+            <span style="text-decoration: underline;">+ 7 800 555-86-28</span>
+            <span style="text-decoration: underline;">КАК НАС НАЙТИ?</span>
+          </div>
+          <div class="suggestions_and_questions">
+            <span>ПОЛУЧАЙТЕ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ</span>
+            <div>
+              <input type="text">
+              <button class="footer_button"></button>
+            </div>            
+          </div>
+          <div class="socials">
+            <span>ДАВАЙТЕ ДРУЖИТЬ</span>
+            <div>
 
-        <footer>
-
+            </div>
+          </div>
         </footer>
     </body>
 </html>
